@@ -1,0 +1,1 @@
+The project demonstrate the working of 'conditional' joining between Hibernate entities and related to this StackOverflow [question](https://stackoverflow.com/q/49118193/5380322).

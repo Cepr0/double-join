@@ -1,0 +1,13 @@
+logging:
+  level:
+    jdbc:
+      sqlonly: info
+      resultsettable: info
+      sqltiming: fatal
+      audit: fatal
+      resultset: fatal
+      connection: fatal
+
+spring:
+  jpa:
+    open-in-view: false
