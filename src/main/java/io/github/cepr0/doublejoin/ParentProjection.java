@@ -13,5 +13,5 @@ public interface ParentProjection {
 	@Value("#{target.parent.name}")
 	String getName();
 
-	Stepchild getNeighbour();
+	Stepchild getStepchild();
 }

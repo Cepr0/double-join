@@ -14,6 +14,6 @@ public interface ParentRepo extends JpaRepository<Parent, Integer> {
 	@EntityGraph(attributePaths = "children")
 	List<Parent> findDistinctByOrderById();
 
-	@Query("select p as parent, n as neighbour from Parent p left join Stepchild n on n.parentId = p.id and n.partitionKey = p.partitionKey order by p.id, n.id")
+	@Query("select p as parent, s as stepchild from Parent p left join Stepchild s on s.parentId = p.id and s.partitionKey = p.partitionKey order by p.id, s.id")
 	List<ParentProjection> getParentProjectionsDoubleJoinedWithStepchild();
 }
